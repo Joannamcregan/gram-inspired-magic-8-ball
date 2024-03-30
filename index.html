@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gram-Inspired Magic 8 Ball</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="images" href="img">
+</head>
+<body class="
+bg-gradient-to-r 
+from-pink-700 
+to-cyan-700 
+via-violet-700
+animate-gradient-xy
+">
+    <header class="
+    bg-neutral-100
+    bg-opacity-25
+    h-14
+    relative
+    ">
+        <div id="sfw-toggle" aria-description="sfw/nsfw toggle"
+        class="
+        inline
+        bg-teal-400
+        absolute
+        top-3
+        left-10
+        py-1
+        rounded-xl
+        shadow-inner
+        ">
+            <span id="sfw" aria-description="mode selected" class="
+            px-2
+            py-1
+            rounded-xl
+            bg-teal-200
+            ">sfw</span>
+            <span id="nsfw" aria-description="mode not selected" class="
+            px-2
+            py-1
+            rounded-xl
+            ">nsfw</span>
+        </div>
+        <p class="
+        absolute
+        bottom-0
+        right-10
+        ">
+            inspired by Mary Cregan
+        </p>
+    </header>
+    <main class="
+    flex
+    items-center
+    justify-center
+    p-4
+    ">
+        <div id="ball" class="
+        w-128
+        h-128
+        rounded-full
+        flex
+        items-center
+        justify-center
+        bg-black-radial-gradient
+        ">
+            <div id="result" class="
+            w-3/5
+            h-2/5
+            bg-black
+            rounded-xl
+            ">
+            </div>
+        </div>
+    </main>
+
+<script src="./src/main.js"></script>
+</body>
+</html>
