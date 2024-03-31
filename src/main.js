@@ -41,6 +41,7 @@ const answers = [{nsfw: "You don’t know your ass from first base", sfw:"You do
 ]
 
 var isSfw = true;
+var isReady = true;
 
 nsfw.addEventListener('click', makeNsfw.bind(this));
 sfw.addEventListener('click', makeSfw.bind(this));
@@ -56,18 +57,22 @@ function updateAnswer(){
 }
 
 function shakeBall(){
-    ball.classList.add('animate-wobble-motion');
-    resultScreen.classList.add('animate-screen-fade-out');
-    setTimeout(()=> resultScreen.classList.remove('animate-screen-fade-out'), 1000);
-    setTimeout(()=> resultScreen.classList.add('hidden'), 1000);
-    setTimeout(updateAnswer, 2000);
-    setTimeout(()=> instructions.classList.add('hidden'), 4150);
-    setTimeout(()=> answer.classList.remove('hidden'), 4200);
-    setTimeout(()=> resultScreen.classList.remove('hidden'), 4200);
-    setTimeout(()=> answer.classList.add('hidden'), 10000);
-    setTimeout(()=> ball.classList.remove('animate-wobble-motion'), 10000);
-    setTimeout(()=> resultScreen.classList.remove('animate-screen-fade-out'), 10000);
-    setTimeout(()=> instructions.classList.remove('hidden'), 10500);
+    if(isReady){
+        isReady = false;
+        ball.classList.add('animate-wobble-motion');
+        resultScreen.classList.add('animate-screen-fade-out');
+        setTimeout(()=> resultScreen.classList.remove('animate-screen-fade-out'), 1000);
+        setTimeout(()=> resultScreen.classList.add('hidden'), 1000);
+        setTimeout(updateAnswer, 2000);
+        setTimeout(()=> ball.classList.remove('animate-wobble-motion'), 2000);
+        setTimeout(()=> instructions.classList.add('hidden'), 4150);
+        setTimeout(()=> answer.classList.remove('hidden'), 4200);
+        setTimeout(()=> resultScreen.classList.remove('hidden'), 4200);
+        setTimeout(()=> answer.classList.add('hidden'), 10000);
+        setTimeout(()=> resultScreen.classList.remove('animate-screen-fade-out'), 10000);
+        setTimeout(()=> instructions.classList.remove('hidden'), 10500);
+        setTimeout(()=> isReady = true, 10500);
+    }
 }
 
 function makeSfw(){
