@@ -68,18 +68,23 @@ animate-gradient-xy
         items-center
         justify-center
         bg-black-radial-gradient
+        origin-bottom
         ">
             <div id="result" class="
             w-[125px] xs330:w-[150px] xs380:w-[200px] xs430:w-[250px] xs480:w-3/5
             h-auto xs330:h-[120px] xs380:h-[150px] xs430:h-[150px] xs480:h-2/5
-            bg-violet-950
+            bg-gradient-to-br
+            from-violet-900
+            to-violet-950
             text-stone-100
             rounded-xl
             flex
             items-center
             p-4
+            shadow-inner
             ">
-                <p class="text-center"><span class="inline"></span>Ask your question then </span><span class="inline md:hidden">tap</span><span class="hidden md:inline">click</span><span class="inline"> anywhere on the screen.</span></p>
+                <p id="instructions" class="text-center"><span class="inline"></span>Ask your question then </span><span class="inline md:hidden">tap</span><span class="hidden md:inline">click</span><span class="inline"> anywhere on the magic 8 ball.</span></p>
+                <p id="answer" class="hidden text-center"></p>
             </div>
         </div>
     </main>

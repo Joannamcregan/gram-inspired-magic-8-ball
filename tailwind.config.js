@@ -37,14 +37,38 @@ module.exports = {
           'xs250': '250px',
         },
         'backgroundImage':{
-          'black-radial-gradient': 'radial-gradient(farthest-corner at 10px 40px, #333, #000)',
+          'black-radial-gradient': 'radial-gradient(farthest-corner at 10px 40px, #444, #000)',
         },
         'animation': {
+            'screen-fade-out':'screen-fade-out 1s forwards',
+            'wobble-motion':'rotate-wobble 0.75s ease 4',
             'gradient-x':'gradient-x 15s ease infinite',
             'gradient-y':'gradient-y 15s ease infinite',
             'gradient-xy':'gradient-xy 15s ease infinite',
         },
         'keyframes': {
+            'rotate-wobble':{
+                '0%, 50%, 100%': {
+                  'rotate': '0deg'
+                },
+                '25%': {
+                  'rotate': '30deg'
+                },
+                '75%': {
+                  'rotate': '-30deg'
+                }
+            },
+            'screen-fade-out':{
+                '0%': {
+                  'opacity':'1'
+                },
+                '25%': {
+                    'opacity':'.25'
+                },
+                '50%, 100%':{
+                    'opacity':'0'
+                }
+            },
             'gradient-y': {
                 '0%, 100%': {
                     'background-size':'400% 400%',
