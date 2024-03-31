@@ -18,7 +18,7 @@ animate-gradient-xy
     <header class="
     bg-neutral-100
     bg-opacity-25
-    h-14
+    h-16
     relative
     ">
         <div id="sfw-toggle" aria-description="sfw/nsfw toggle"
@@ -37,12 +37,12 @@ animate-gradient-xy
             py-1
             rounded-xl
             bg-teal-200
-            ">sfw</span>
+            ">clean</span>
             <span id="nsfw" aria-description="mode not selected" class="
             px-2
             py-1
             rounded-xl
-            ">nsfw</span>
+            ">explicit</span>
         </div>
         <p class="
         absolute
@@ -53,14 +53,16 @@ animate-gradient-xy
         </p>
     </header>
     <main class="
+    h-full
     flex
     items-center
     justify-center
-    p-4
+    px-4
+    pt-10 xs480:pt-6
     ">
         <div id="ball" class="
-        w-128
-        h-128
+        w-[250px] xs330:w-xs250 xs380:w-xs300 xs430:w-xs350 xs480:w-400 xs530:w-xs450 xs580:w-xs500 sm:w-128 
+        h-[250px] xs330:h-xs250 xs380:h-xs300 xs430:h-xs350 xs480:h-400 xs530:h-xs450 xs580:h-xs500  sm:h-128 
         rounded-full
         flex
         items-center
@@ -68,11 +70,16 @@ animate-gradient-xy
         bg-black-radial-gradient
         ">
             <div id="result" class="
-            w-3/5
-            h-2/5
-            bg-black
+            w-[125px] xs330:w-[150px] xs380:w-[200px] xs430:w-[250px] xs480:w-3/5
+            h-auto xs330:h-[120px] xs380:h-[150px] xs430:h-[150px] xs480:h-2/5
+            bg-violet-950
+            text-stone-100
             rounded-xl
+            flex
+            items-center
+            p-4
             ">
+                <p class="text-center"><span class="inline"></span>Ask your question then </span><span class="inline md:hidden">tap</span><span class="hidden md:inline">click</span><span class="inline"> anywhere on the screen.</span></p>
             </div>
         </div>
     </main>

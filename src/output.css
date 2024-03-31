@@ -554,30 +554,12 @@ video {
   --tw-contain-style:  ;
 }
 
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
 }
 
 .relative {
   position: relative;
-}
-
-.inset-1\/2 {
-  inset: 50%;
-}
-
-.inset-x-1\/2 {
-  left: 50%;
-  right: 50%;
-}
-
-.inset-y-1\/2 {
-  top: 50%;
-  bottom: 50%;
 }
 
 .bottom-0 {
@@ -596,48 +578,6 @@ video {
   top: 0.75rem;
 }
 
-.top-10 {
-  top: 2.5rem;
-}
-
-.left-5 {
-  left: 1.25rem;
-}
-
-.left-20 {
-  left: 5rem;
-}
-
-.top-20 {
-  top: 5rem;
-}
-
-.left-40 {
-  left: 10rem;
-}
-
-.m-0 {
-  margin: 0px;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .inline {
   display: inline;
 }
@@ -646,40 +586,64 @@ video {
   display: flex;
 }
 
-.h-128 {
-  height: 32rem;
+.hidden {
+  display: none;
 }
 
-.h-14 {
-  height: 3.5rem;
-}
-
-.h-10 {
-  height: 2.5rem;
+.h-16 {
+  height: 4rem;
 }
 
 .h-3\/5 {
   height: 60%;
 }
 
-.h-2\/5 {
-  height: 40%;
+.h-\[250px\] {
+  height: 250px;
 }
 
-.w-128 {
-  width: 32rem;
+.h-7\/10 {
+  height: 70%;
 }
 
-.w-16 {
-  width: 4rem;
+.h-\[70\%\] {
+  height: 70%;
+}
+
+.h-\[75px\] {
+  height: 75px;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-4\/5 {
   width: 80%;
 }
 
-.w-3\/5 {
-  width: 60%;
+.w-\[250px\] {
+  width: 250px;
+}
+
+.w-7\/10 {
+  width: 70%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[125px\] {
+  width: 125px;
 }
 
 @keyframes gradient-xy {
@@ -729,9 +693,9 @@ video {
   background-color: rgb(45 212 191 / var(--tw-bg-opacity));
 }
 
-.bg-black {
+.bg-violet-950 {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  background-color: rgb(46 16 101 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-25 {
@@ -761,16 +725,16 @@ video {
   --tw-gradient-to: #0e7490 var(--tw-gradient-to-position);
 }
 
-.p-10 {
-  padding: 2.5rem;
+.p-4 {
+  padding: 1rem;
 }
 
 .p-6 {
   padding: 1.5rem;
 }
 
-.p-4 {
-  padding: 1rem;
+.p-10 {
+  padding: 2.5rem;
 }
 
 .px-2 {
@@ -783,8 +747,154 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-stone-100 {
+  --tw-text-opacity: 1;
+  color: rgb(245 245 244 / var(--tw-text-opacity));
+}
+
 .shadow-inner {
   --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 330px) {
+  .xs330\:h-xs250 {
+    height: 250px;
+  }
+
+  .xs330\:h-\[120px\] {
+    height: 120px;
+  }
+
+  .xs330\:w-xs250 {
+    width: 250px;
+  }
+
+  .xs330\:w-\[150px\] {
+    width: 150px;
+  }
+}
+
+@media (min-width: 380px) {
+  .xs380\:h-xs300 {
+    height: 300px;
+  }
+
+  .xs380\:h-\[200px\] {
+    height: 200px;
+  }
+
+  .xs380\:h-\[150px\] {
+    height: 150px;
+  }
+
+  .xs380\:w-xs300 {
+    width: 300px;
+  }
+
+  .xs380\:w-\[200px\] {
+    width: 200px;
+  }
+}
+
+@media (min-width: 430px) {
+  .xs430\:h-xs350 {
+    height: 350px;
+  }
+
+  .xs430\:h-\[280px\] {
+    height: 280px;
+  }
+
+  .xs430\:h-\[150px\] {
+    height: 150px;
+  }
+
+  .xs430\:w-xs350 {
+    width: 350px;
+  }
+
+  .xs430\:w-\[280px\] {
+    width: 280px;
+  }
+
+  .xs430\:w-\[250px\] {
+    width: 250px;
+  }
+}
+
+@media (min-width: 480px) {
+  .xs480\:h-2\/5 {
+    height: 40%;
+  }
+
+  .xs480\:w-3\/5 {
+    width: 60%;
+  }
+
+  .xs480\:p-4 {
+    padding: 1rem;
+  }
+
+  .xs480\:p-6 {
+    padding: 1.5rem;
+  }
+
+  .xs480\:pt-6 {
+    padding-top: 1.5rem;
+  }
+}
+
+@media (min-width: 530px) {
+  .xs530\:h-xs450 {
+    height: 450px;
+  }
+
+  .xs530\:w-xs450 {
+    width: 450px;
+  }
+}
+
+@media (min-width: 580px) {
+  .xs580\:h-xs500 {
+    height: 500px;
+  }
+
+  .xs580\:w-xs500 {
+    width: 500px;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:h-128 {
+    height: 32rem;
+  }
+
+  .sm\:w-128 {
+    width: 32rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:inline {
+    display: inline;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
 }
